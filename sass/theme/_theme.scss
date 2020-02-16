@@ -1,1 +1,23 @@
 // This is an empty scss file for your custom styles - Please add your super duper awesome mega design styles here
+h1,h2 {
+    text-transform: uppercase;
+    text-align: center;
+    color: #131313;
+    margin-bottom: 2rem;
+}
+.wrapper {
+    background-image: url('../img/news-detail-bg.jpg');
+}
+.wrapper#wrapper-hero {
+    background-image: none;
+}
+.post-navigation a,
+.btn {
+    background: #f45731;
+    color: #131313;
+    border: 1px solid #f45731;
+    border-radius: 0;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 5px;
+}

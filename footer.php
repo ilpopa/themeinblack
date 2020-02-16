@@ -24,12 +24,9 @@ $container = get_theme_mod( 'understrap_container_type' );
 			<div class="col-md-12">
 
 				<footer class="site-footer" id="colophon">
-
-					<div class="site-info">
-
-						<?php understrap_site_info(); ?>
-
-					</div><!-- .site-info -->
+					<div class="d-flex justify-content-center">
+						<img class="img-fluid" src="http://themeinblack.local/wp-content/uploads/2020/02/cropped-beast-in-black-logo.png" />
+					</div>
 
 				</footer><!-- #colophon -->
 

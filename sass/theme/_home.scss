@@ -1,0 +1,14 @@
+// This is an empty scss file for your custom styles - Please add your super duper awesome mega design styles here
+.news .card {
+    margin-bottom: 15px;
+    border-radius: 0;
+    border-color: #000000;
+    background-color: #131313;
+    color: #ffebae;
+    img {
+        object-fit: cover;
+        max-height: 186px;
+            border-top-left-radius: calc(.25rem - 1px);
+        border-top-right-radius: calc(.25rem - 1px);
+    }  
+} 

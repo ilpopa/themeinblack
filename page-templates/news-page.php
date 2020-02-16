@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Custom home
+ * Template Name: News Page
  *
  * Template for displaying a page without sidebar even if a sidebar widget is published.
  *
@@ -14,12 +14,6 @@ get_header();
 $container = get_theme_mod( 'understrap_container_type' );
 ?>
 
-<?php if ( is_front_page() ) : ?>
-  <?php get_template_part( 'global-templates/hero' ); ?>
-  </div>
-<?php endif; ?>
-
-
 <div class="wrapper" id="full-width-page-wrapper">
 
 	<div class="<?php echo esc_attr( $container ); ?>" id="content">
@@ -30,27 +24,16 @@ $container = get_theme_mod( 'understrap_container_type' );
 			
 				<main class="site-main" id="main">
 
-					<?php while ( have_posts() ) : the_post(); ?>
-
-						<?php get_template_part( 'loop-templates/content', 'page' ); ?>
-
-						<?php
-						// If comments are open or we have at least one comment, load up the comment template.
-						if ( comments_open() || get_comments_number() ) :
-							comments_template();
-						endif;
-						?>
-
-					<?php endwhile; // end of the loop. ?>
+					<div class="container news">
+						<h2>Latest news</h2>
+						<div class="row">
+							<?php echo news_posts(); ?>
+						</div>
+					</div>
 
 				</main><!-- #main -->
 
-				<div class="container news">
-					<h2>Latest news</h2>
-					<div class="row">
-						<?php echo delicious_recent_posts(); ?>
-					</div>
-				</div>	
+
 			</div><!-- #primary -->
 
 		</div><!-- .row end -->
